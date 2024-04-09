@@ -24,17 +24,6 @@ TARGET_OTA_ASSERT_DEVICE := m51
 # Board
 TARGET_BOARD_NAME := SRPTD22A005
 
-# Camera
-SOONG_CONFIG_NAMESPACES += samsung_sm6150CameraVars
-SOONG_CONFIG_samsung_sm6150CameraVars += \
-    samsung_sm6150_model
-
-SOONG_CONFIG_samsung_sm6150CameraVars_samsung_sm6150_model := $(TARGET_DEVICE)
-
-# Fingerprint
-TARGET_SEC_FP_REQUEST_FORCE_CALIBRATE := true
-TARGET_SEC_FP_REQUEST_TOUCH_EVENT := true
-
 # GPU
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno618
 

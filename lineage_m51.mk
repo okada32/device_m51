@@ -24,7 +24,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 PRODUCT_NAME := lineage_m51
 PRODUCT_DEVICE := m51
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-M515
+PRODUCT_MODEL := SM-M515F
 PRODUCT_MANUFACTURER := samsung
 
 # Use the latest approved GMS identifiers
@@ -34,16 +34,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-samsung
 BUILD_FINGERPRINT := "samsung/m51nsxx/m51:11/RP1A.200720.012/M515FXXS5DXA1:user/release-keys"
 PRIVATE_BUILD_DESC := "m51nsxx-user 12 SP1A.210812.016 M515FXXS5DXA1 release-keys"
 
-# Matrixx Stuff
+# EXtra Stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-MATRIXX_CHIPSET := SM7150
-MATRIXX_BATTERY := 7000mAh
-MATRIXX_DISPLAY := 1080x2400
-MATRIXX_MAINTAINER := OKADA
 TARGET_ENABLE_BLUR := true
-
-# Gapps
-WITH_GMS := true
-BUILD_GOOGLE_MESSAGE := true
-TARGET_GAPPS_ARCH := arm64
 
