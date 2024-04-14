@@ -47,6 +47,7 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
+    $(DEVICE_PATH)/overlay-derp \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
