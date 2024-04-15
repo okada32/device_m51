@@ -37,12 +37,6 @@ TARGET_KERNEL_CONFIG := m51_defconfig
 BOARD_DTB_OFFSET := 0x01F00000
 BOARD_MKBOOTIMG_ARGS := --dtb_offset $(BOARD_DTB_OFFSET) --header_version $(BOARD_BOOT_HEADER_VERSION)
 
-# Camera
-SOONG_CONFIG_NAMESPACES += samsungCameraVars
-SOONG_CONFIG_samsungCameraVars += extra_ids
-# ID=54 is macro
-SOONG_CONFIG_samsungCameraVars_extra_ids := 54
-
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
