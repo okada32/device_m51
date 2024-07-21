@@ -21,9 +21,6 @@ DEVICE_PATH := device/samsung/m51
 # Assert
 TARGET_OTA_ASSERT_DEVICE := m51
 
-# Board
-TARGET_BOARD_NAME := SRPTD22A005
-
 # GPU
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno618
 
@@ -32,14 +29,13 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_m51
 TARGET_RECOVERY_DEVICE_MODULES := libinit_m51
 
 # Kernel
-BOARD_BOOT_HEADER_VERSION := 2
-TARGET_KERNEL_CONFIG := m51_defconfig
-BOARD_DTB_OFFSET := 0x01F00000
-BOARD_MKBOOTIMG_ARGS := --dtb_offset $(BOARD_DTB_OFFSET) --header_version $(BOARD_BOOT_HEADER_VERSION)
+TARGET_KERNEL_CONFIG        := m51_defconfig
+BOARD_NAME                  := SRPTD22A005
 
 # Camera
 SOONG_CONFIG_NAMESPACES += samsungCameraVars
 SOONG_CONFIG_samsungCameraVars += extra_ids
+
 # ID=54 is macro
 SOONG_CONFIG_samsungCameraVars_extra_ids := 54
 
