@@ -1,7 +1,7 @@
 [
   {
-    "repository": "android_device_samsung_sm6150-common",
-    "target_path": "device/samsung/sm6150-common"
+    "repository": "android_device_samsung_a71-common",
+    "target_path": "device/samsung/a71-common"
   },
   {
     "repository": "android_hardware_samsung_nfc",

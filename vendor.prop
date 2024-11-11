@@ -1,2 +1,6 @@
 # Bluetooth
 bluetooth.device.default_name=Galaxy M51
+
+# Fingerprint
+ro.vendor.fingerprint.type=side
+ro.vendor.fingerprint.sensor_location=1080|800|350
